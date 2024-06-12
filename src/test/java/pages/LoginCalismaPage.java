@@ -22,4 +22,16 @@ public class LoginCalismaPage {
     @FindBy(xpath = "//div[@id='activeLogoDiv']")
     public WebElement bilgeAdamLogo;
 
+    @FindBy(xpath = "//a[@href='/Domain/Menu/1043']")
+    public WebElement temelIKVeOrganizasyonButton;
+
+    @FindBy(xpath = "//h4[text()='Temel IK ve Organizasyon']")
+    public WebElement temelIKVeOrganizasyonText;
+
+    @FindBy(xpath = "//a[@href='/Domain/Menu/1042']")
+    public WebElement yetenekYonetimiButton;
+
+    @FindBy(xpath = "//h4[text()='Yetenek Yönetimi']")
+    public WebElement yetenekYonetimiText;
+
 }

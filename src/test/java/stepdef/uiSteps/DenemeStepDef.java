@@ -7,6 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 import pages.DenemePage;
+import pages.LoginCalismaPage;
 
 public class DenemeStepDef {
     DenemePage denemePage = new DenemePage();
@@ -14,6 +15,7 @@ public class DenemeStepDef {
     @Given("Giris sayfasina gidilir")
     public void girisSayfasinaGidilir() {
         DriverManager.getDriver().get(ConfigReader.getProperty("website.url"));
+
     }
 
     @Then("Dogru kullanici adi girilir")
